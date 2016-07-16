@@ -1,0 +1,5 @@
+#RULE MVC 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{SCRIPT_NAME} !-f
+RewriteRule ^(.*)$ index.php?$1
